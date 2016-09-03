@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import os
+
 from distutils.core import setup
 
 setup(name='Acronyms',
@@ -10,5 +12,3 @@ setup(name='Acronyms',
       url='https://ctefer.github.io',
       packages=['acronyms'],
      )
-
-     

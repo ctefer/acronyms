@@ -11,10 +11,10 @@ md_table(acronym dictionary) - returns the acronym dictionary
 import json
 import os.path
 
-_acronym_json = 'acronyms.json'
+DEFAULT_JSON = 'acronyms.json'
 _dir_setup = os.path.dirname(os.path.realpath(__file__))
 
-def load(acr_file=_acronym_json):
+def load(acr_file=DEFAULT_JSON):
 
     data = {}
 
@@ -26,7 +26,7 @@ def load(acr_file=_acronym_json):
 
     return data
 
-def dump(acroset, save=_acronym_json):
+def dump(acroset, save=DEFAULT_JSON):
 
     data = {}
 
